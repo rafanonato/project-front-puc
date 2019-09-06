@@ -3,19 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RouterModule } from '@angular/router';
 import { CadastroComponent } from './cadastro/cadastro.component';
+import { AcessarComponent } from './acessar/acessar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CadastroComponent
+    CadastroComponent,
+    AcessarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, CadastroComponent, AcessarComponent]
 })
 export class AppModule { }

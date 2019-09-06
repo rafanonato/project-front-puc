@@ -1,20 +1,20 @@
-import { NgModule, Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
 import { AppComponent } from './app.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
-
+import { AcessarComponent } from './acessar/acessar.component';
 
 const routes: Routes = [
+
   {
     path:'',
-    pathMatch:'full',
-    component: AppComponent
+    component: CadastroComponent
   },
   {
-    path:'cadastro',
-    component: CadastroComponent
+    path: 'acessar',
+    component: AcessarComponent
   }
+  
 ];
 
 @NgModule({
