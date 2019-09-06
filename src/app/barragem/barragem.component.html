@@ -15,8 +15,20 @@
             <label for="inputNome">Buscar Barragem</label>
             <form class="form-inline">
                 <input class="form-control mr-sm-2" style="margin-right: 15px" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" (ng-click)="get_barragens()">GET /products</button>
+
+                <button class="btn btn-outline-success my-2 my-sm-0" (click)="enviar()">Buscar</button>
             </form>
+
+            <ul>
+                    <li *ngFor="let barragem of barragens">
+                      -- id: {{barragem.id}}
+                      -- nome: {{barragem.nome}}
+                      -- tipo: {{barragem.tipo}}
+                      -- estado: {{barragem.estado}}
+                    </li>
+                  </ul> 
+
         </div>
         <hr class="style1">
 
@@ -46,7 +58,7 @@
                     <label for="inputEmail">e-mail</label>
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="e-mail">
                   </div>
-                  
+
                 <a type="submit" class="btn btn-primary">Cadastrar</a>
               </form>
         </div>
