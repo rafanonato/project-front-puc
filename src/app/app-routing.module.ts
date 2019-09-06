@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { AcessarComponent } from './acessar/acessar.component';
+import { LogadoComponent } from './logado/logado.component';
 
 const routes: Routes = [
 
@@ -13,6 +14,11 @@ const routes: Routes = [
   {
     path: 'acessar',
     component: AcessarComponent
+  },
+
+  {
+    path: 'logado',
+    component: LogadoComponent
   }
   
 ];
