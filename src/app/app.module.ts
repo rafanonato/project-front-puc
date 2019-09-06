@@ -6,19 +6,21 @@ import { AppComponent } from './app.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { AcessarComponent } from './acessar/acessar.component';
 import { LogadoComponent } from './logado/logado.component';
+import { BarragemComponent } from './barragem/barragem.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CadastroComponent,
     AcessarComponent,
-    LogadoComponent
+    LogadoComponent,
+    BarragemComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent, CadastroComponent, AcessarComponent, LogadoComponent]
+  bootstrap: [AppComponent, CadastroComponent, AcessarComponent, LogadoComponent, BarragemComponent]
 })
 export class AppModule { }

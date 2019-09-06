@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { AcessarComponent } from './acessar/acessar.component';
 import { LogadoComponent } from './logado/logado.component';
+import { BarragemComponent } from './barragem/barragem.component';
 
 const routes: Routes = [
 
@@ -19,6 +20,10 @@ const routes: Routes = [
   {
     path: 'logado',
     component: LogadoComponent
+  },
+  {
+    path: 'logado/barragem',
+    component: BarragemComponent
   }
   
 ];
