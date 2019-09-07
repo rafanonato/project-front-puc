@@ -5,6 +5,8 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { AcessarComponent } from './acessar/acessar.component';
 import { LogadoComponent } from './logado/logado.component';
 import { BarragemComponent } from './barragem/barragem.component';
+import { SucessoComponent } from './sucesso/sucesso.component';
+import { ProcessoComponent } from './processo/processo.component';
 
 const routes: Routes = [
 
@@ -24,6 +26,16 @@ const routes: Routes = [
   {
     path: 'logado/barragem',
     component: BarragemComponent
+  },
+
+  {
+    path: 'sucesso',
+    component: SucessoComponent
+  },
+
+  {
+    path: 'logado/processo',
+    component: ProcessoComponent
   }
   
 ];

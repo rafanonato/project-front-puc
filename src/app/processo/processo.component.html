@@ -1,0 +1,74 @@
+<div class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" style="margin-left: 40%" routerLink="/logado"><img src="../../assets/logo.png" style="height: 35px" style="width: 35px"></a>
+</div>
+
+<div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Processos</h1>
+          <p class="lead">Cadastrar ou buscar processos no sistema</p>
+        </div>
+</div>
+
+<dir class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+
+        <div class="navbar navbar-light bg-light">
+
+            <label for="inputNome">Buscar Processos</label>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" style="margin-right: 15px" type="search" placeholder="Insira o ID do processo">
+                <button class="btn btn-outline-success my-2 my-sm-0" ng-click="get_processo()">Buscar</button>
+            </form>
+
+            <ul>
+                    <li *ngFor="let barragem of barragens">
+                      -- id: {{barragem.id}}
+                      -- nome: {{barragem.nome}}
+                      -- tipo: {{barragem.tipo}}
+                      -- estado: {{barragem.estado}}
+                    </li>
+                  </ul> 
+
+        </div>
+        <hr class="style1">
+
+            <form>
+                <div class="form-group">
+                  <label for="inputNome">ID do processo</label>
+                  <input type="text" class="form-control" placeholder="ID">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputNome">Processo</label>
+                    <input type="text" class="form-control" placeholder="Insira o nome do processo">
+                  </div>
+
+                  <div class="form-group">
+                      <label for="inputNome">Area responsável</label>
+                      <input type="text" class="form-control" placeholder="Nome da área responsavel">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputNome">Usuário</label>
+                        <input type="text" class="form-control" placeholder="Seu usuário">
+                      </div>
+
+                      <div class="form-group">
+                          <label for="inputNome">Descrição</label>
+                          <input type="text" class="form-control" placeholder="Descreva em poucas linhas o processo">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputNome">Legislação Vigente</label>
+                            <input type="text" class="form-control" placeholder="Lei aprovada">
+                          </div>
+               
+                <a type="submit" class="btn btn-success btn-lg">Cadastrar</a>
+              </form>
+        </div>
+        <div class="col-md-3"></div>
+
+    </div>
+</dir>
