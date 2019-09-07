@@ -16,19 +16,11 @@ export class BarragemComponent implements OnInit {
   ngOnInit() {
   }
 
-
-
-
 get_baragens(){
     this.httpClient.get(this.baseUrl + '/barragem/cadastrar').subscribe((res : any[])=>{
     console.log(res);
     this.barragens = res;
     });
   }
-
-myFunc(){
-    console.log("function called");
-  }
-
 
 }
